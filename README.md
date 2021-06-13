@@ -1,6 +1,6 @@
 # Human-Resource-Management-System
 
-![Uploading Ekran Resmi 2021-06-13 03.40.29.png…]()
+
 
 
 
@@ -43,3 +43,5 @@ Req 5 : İş arayanlar listelenebilmelidir. (Sadece tüm liste)
 
 Req 6 : İş pozisyonları listelenebilmelidir. (Sadece tüm liste)
 
+![alt text](http://url/to/<img width="1214" alt="Ekran Resmi 2021-06-13 03 40 29" src="https://user-images.githubusercontent.com/59649434/121792157-20f32400-cbfa-11eb-914e-c8aeca5dbd10.png">
+)
