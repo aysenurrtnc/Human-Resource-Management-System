@@ -12,5 +12,4 @@ public interface UserService {
 	DataResult<List<User>> getById(int id);
 	DataResult<List<User>> getByEmail(String email);
 	
-	
 }

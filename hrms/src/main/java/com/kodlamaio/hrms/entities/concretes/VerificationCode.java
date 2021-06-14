@@ -32,6 +32,9 @@ public class VerificationCode {
 	@Column(name = "is_verified")
 	private boolean isVerified;
 	
+	@Column(name = "user_id")
+	private int userId;
+	
 	
 
 }

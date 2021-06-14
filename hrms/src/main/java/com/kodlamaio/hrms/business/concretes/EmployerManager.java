@@ -22,6 +22,7 @@ import com.kodlamaio.hrms.entities.concretes.Employer;
 @Service
 public class EmployerManager implements EmployerService{
 	
+
 	private EmployerDao employerDao;
 	private VerificationCodeService verificationCodeService;
 	
@@ -92,13 +93,5 @@ private Result realPhoneNumber(String phoneNumber) {
 }
 	
 
-	
-	
-	
-	
 
-	
-	
-	
 }
-

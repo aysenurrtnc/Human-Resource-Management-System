@@ -7,9 +7,9 @@ import com.kodlamaio.hrms.entities.concretes.JobPosition;
 
 public interface JobPositionService {
 
+	
 	List<JobPosition> getAll();
 	public Result add(JobPosition jobPosition);
 	public Result update(JobPosition jobPosition);
 	public Result delete(JobPosition jobPosition);
-
 }

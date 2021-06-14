@@ -9,5 +9,4 @@ import com.kodlamaio.hrms.entities.concretes.User;
 public interface UserDao extends JpaRepository<User, Integer> {
 	List<User> getById(int id);
 	List<User> getByEmail(String email);
-
 }

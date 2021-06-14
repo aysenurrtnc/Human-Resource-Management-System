@@ -8,5 +8,8 @@ import com.kodlamaio.hrms.entities.concretes.Employer;
 
 public interface EmployerDao extends JpaRepository<Employer, Integer> {
 	List<Employer> getByEmail(String email);
+	//*
+	boolean existsById(int id);
+
 
 }

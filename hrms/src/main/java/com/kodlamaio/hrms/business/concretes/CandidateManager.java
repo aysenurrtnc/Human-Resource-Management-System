@@ -33,7 +33,8 @@ public class CandidateManager implements CandidateService {
 
 	@Override
 	public DataResult<List<Candidate>> getAll() {
-		return new SuccessDataResult<List<Candidate>>(this.candidateDao.findAll(), "candidates was listed");
+		return new SuccessDataResult<List<Candidate>>
+		(this.candidateDao.findAll(), "candidates was listed");
 	}
 
 	@Override

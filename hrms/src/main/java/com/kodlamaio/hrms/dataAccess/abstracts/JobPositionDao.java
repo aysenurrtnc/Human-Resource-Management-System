@@ -10,5 +10,5 @@ import com.kodlamaio.hrms.entities.concretes.JobPosition;
 @Service
 public interface JobPositionDao extends JpaRepository<JobPosition, Integer>{  //CRUD operasyonları burda hazır
 
-	
+	JobPosition getByPosition(String position);
 }

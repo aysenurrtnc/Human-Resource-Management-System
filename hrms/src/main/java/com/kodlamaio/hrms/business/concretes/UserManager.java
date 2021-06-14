@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import com.kodlamaio.hrms.business.BusinessRules;
 import com.kodlamaio.hrms.business.abstracts.UserService;
 import com.kodlamaio.hrms.core.utilities.results.DataResult;
@@ -19,8 +20,7 @@ import com.kodlamaio.hrms.entities.concretes.User;
 
 @Service
 public class UserManager implements UserService{
-	
-	private UserDao userDao;
+private UserDao userDao;
 	
 	@Autowired
 	public UserManager(UserDao userDao) {
@@ -75,6 +75,6 @@ public class UserManager implements UserService{
 		return new SuccessResult();
 	}
 	
-	
-	
+
+
 }

@@ -12,7 +12,5 @@ public interface EmployerService {
 	 DataResult<List<Employer>> getByEmail(String email);
 	
 	
-	
-	
 
 }
