@@ -21,15 +21,18 @@ public class UserController {
 	
 
 	private UserService userService;
+	
 	@Autowired
 	public UserController(UserService userService) {
 		super();
 		this.userService = userService;
 	}
+	
 	@GetMapping("/getall")
 	public DataResult<List<User>>getAll(){
 		return this.userService.getAll();
 	}
+	
 	@PostMapping("/add")
 	public Result add(User user) {
 		return this.userService.add(user);

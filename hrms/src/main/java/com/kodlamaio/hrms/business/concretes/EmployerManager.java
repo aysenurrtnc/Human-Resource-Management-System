@@ -91,6 +91,11 @@ private Result realPhoneNumber(String phoneNumber) {
 	return new SuccessResult();
 	
 }
+
+@Override
+public Employer findByEmployerId(int id) {
+	return this.employerDao.getById(id);
+}
 	
 
 

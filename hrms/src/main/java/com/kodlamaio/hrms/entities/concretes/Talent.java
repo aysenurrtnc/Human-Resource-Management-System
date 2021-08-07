@@ -17,26 +17,23 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity // JobPosition bir Entity'dir.
-@Table(name = "job_positions") // veritabanında bu class'ın karşılıgı job_positions tablosudur.
-@JsonIgnoreProperties({"hibernateLazyInitializer","handler","jobAdvertisement"})
+@Entity
+@Table(name = "talents")
 @AllArgsConstructor
 @NoArgsConstructor
-public class JobPosition {
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler","candidateTalent"})
 
+public class Talent {
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	
-	@Column(name = "id") // veritabanında karşılıgı olan kolonun adı
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
 	private int id;
-
-	@Column(name = "position")
-	private String position;
 	
-	@OneToMany(mappedBy = "jobPosition")
-	private List<JobAdvertisement> jobAdvertisement;
+	@Column(name="talent_name")
+	private String talentName;
 	
-
-	
+	@OneToMany(mappedBy = "talent")
+    private List<CandidateTalent> candidateTalent;
 
 }

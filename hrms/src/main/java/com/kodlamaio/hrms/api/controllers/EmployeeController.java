@@ -18,15 +18,18 @@ import com.kodlamaio.hrms.entities.concretes.Employee;
 public class EmployeeController {
 
 	private EmployeeService employeeService;
+	
 	@Autowired
 	public EmployeeController(EmployeeService employeeService) {
 		super();
 		this.employeeService = employeeService;
 	}
+	
 	@GetMapping("/getall")
 	public DataResult<List<Employee>> getAll(){
 		return this.employeeService.getAll();
 	}
+	
 	@PostMapping("/add")
 	public Result add(Employee employee) {
 		return this.employeeService.add(employee);

@@ -1,4 +1,5 @@
 /**
+ /**
  * KPSPublicSoapStub.java
  *
  * This file was auto-generated from WSDL
@@ -6,6 +7,8 @@
  */
 
 package tr.gov.nvi.tckimlik.WS;
+
+import javax.swing.JDialog;
 
 public class KPSPublicSoapStub extends org.apache.axis.client.Stub implements tr.gov.nvi.tckimlik.WS.KPSPublicSoap {
     private java.util.Vector cachedSerClasses = new java.util.Vector();

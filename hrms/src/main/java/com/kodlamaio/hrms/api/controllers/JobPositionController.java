@@ -20,6 +20,7 @@ import com.kodlamaio.hrms.entities.concretes.JobPosition;
 @CrossOrigin
 
 public class JobPositionController {
+	
 	private JobPositionService jobPositionService;
 	
 	@Autowired

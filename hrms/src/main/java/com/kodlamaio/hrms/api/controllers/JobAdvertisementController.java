@@ -2,6 +2,7 @@ package com.kodlamaio.hrms.api.controllers;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,9 +18,12 @@ import com.kodlamaio.hrms.entities.concretes.JobAdvertisement;
 @RestController
 @RequestMapping("/api/jobadvertisements")
 @CrossOrigin
+
 public class JobAdvertisementController {
+	
 	private JobAdvertisementService jobAdvertisementService;
 	
+	@Autowired
 	public JobAdvertisementController(JobAdvertisementService jobAdvertisementService) {
 		super();
 		this.jobAdvertisementService = jobAdvertisementService;
